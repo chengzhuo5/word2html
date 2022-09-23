@@ -1,0 +1,16 @@
+{
+  "name": "word2html",
+  "scripts": {
+    "build": "esbuild --bundle index.js --platform=node --target=node16 --outfile=out.js  --minify",
+    "package": "npm run build && pkg out.js --config build.json --output dist/word2html.exe --compress GZip && del out.js"
+  },
+  "dependencies": {
+    "execa": "^5",
+    "fs-extra": "^10.1.0",
+    "jsdom": "^6.0.0",
+    "klaw": "^4.0.1"
+  },
+  "devDependencies": {
+    "del-cli": "^5.0.0"
+  }
+}
