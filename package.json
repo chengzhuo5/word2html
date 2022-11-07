@@ -1,7 +1,8 @@
 {
-  "name": "word2html",
+  "name": "@minar-kotonoha/word2html",
+  "version": "1.0.0",
   "scripts": {
-    "build": "esbuild --bundle index.js --platform=node --target=node16 --outfile=out.js  --minify",
+    "build": "esbuild --bundle cli.js --platform=node --target=node18 --outfile=out.js  --minify",
     "package": "npm run build && pkg out.js --config build.json --output dist/word2html.exe --compress GZip && del out.js"
   },
   "dependencies": {
@@ -11,6 +12,23 @@
     "klaw": "^4.0.1"
   },
   "devDependencies": {
+    "@types/klaw": "^3.0.3",
+    "@types/node": "^18.11.9",
     "del-cli": "^5.0.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chengzhuo5/word2html.git"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "main": "index.js",
+  "files": [
+    "docto_64.exe",
+    "handleHtml.js",
+    "index.js",
+    "word2html.js"
+  ]
 }

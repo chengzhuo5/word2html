@@ -4,7 +4,21 @@
 
 ## 使用方式
 
-先安装依赖：
+### npm引入
+
+```typescript
+import { convertWords, convertDir } from '@minar-kotonoha/word2html';
+convertFiles(['D:\\1.word', 'D:\\2.word'], 'D:\\output').then(() => {
+  console.log('转换完成');
+});
+convertDir('D:\\input', 'D:\\output').then(() => {
+  console.log('转换完成');
+});
+```
+
+### CLI
+
+先克隆代码，再安装依赖：
 
 ```bash
 pnpm i

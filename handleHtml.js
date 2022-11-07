@@ -29,6 +29,7 @@ module.exports = (html) => {
     })()}</title>`;
   }
   return jsdom.serializeDocument(document);
+  // pt转px
   //   .replace(/(\d)pt/g, ($0, $1) => {
   //   return `${$1}px`;
   // })

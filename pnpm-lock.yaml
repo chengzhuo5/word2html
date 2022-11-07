@@ -1,6 +1,8 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@types/klaw': ^3.0.3
+  '@types/node': ^18.11.9
   del-cli: ^5.0.0
   execa: ^5
   fs-extra: ^10.1.0
@@ -14,6 +16,8 @@ dependencies:
   klaw: 4.0.1
 
 devDependencies:
+  '@types/klaw': 3.0.3
+  '@types/node': 18.11.9
   del-cli: 5.0.0
 
 packages:
@@ -60,8 +64,18 @@ packages:
       fastq: 1.13.0
     dev: true
 
+  /@types/klaw/3.0.3:
+    resolution: {integrity: sha512-mXlRDFbTLpVysvxahXUQav0hFctgu3Fqr2xmSrpf/ptO/FwOp7SFEGsJkEihwshMbof3/BIiVJ/o42cuOOuv6g==}
+    dependencies:
+      '@types/node': 18.11.9
+    dev: true
+
   /@types/minimist/1.2.2:
     resolution: {integrity: sha512-jhuKLIRrhvCPLqwPcx6INqmKeiA5EWrsCOPhrlFSrbrmU4ZMPjj5Ul/oLCMDO98XRUIwVm78xICz4EPCektzeQ==}
+    dev: true
+
+  /@types/node/18.11.9:
+    resolution: {integrity: sha512-CRpX21/kGdzjOpFsZSkcrXMGIBWMGNIHXXBVFSH+ggkftxg+XYP20TESbh+zFvFj3EQOl5byk0HTRn1IL6hbqg==}
     dev: true
 
   /@types/normalize-package-data/2.4.1:
